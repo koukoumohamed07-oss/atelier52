@@ -1,0 +1,29 @@
+Atelier M2 - site web (version avec base de données partagée)
+=============================================================
+Problème réglé : les photos, services, offres et fiches clients sont maintenant enregistrés en ligne
+(Supabase, gratuit) et non plus dans un seul navigateur. Une modification faite sur un appareil
+s'affiche sur tous les appareils, et un formulaire rempli par un client arrive dans votre admin.
+
+MISE EN PLACE (une seule fois, environ 10 minutes)
+1. Créez un compte gratuit sur https://supabase.com puis "New project" (choisissez un mot de passe de base de données et une région proche, ex. Paris / Frankfurt).
+2. Menu "SQL Editor" > "New query" : collez tout le contenu du fichier supabase-setup.sql > bouton "Run".
+3. Menu "Authentication" > "Sign In / Providers" (ou "Providers") > "Email" : DÉSACTIVEZ "Allow new users to sign up". C'est important : sinon n'importe qui pourrait créer un compte admin.
+4. Menu "Authentication" > "Users" > "Add user" > "Create new user" : créez les 2 comptes admin, cochez "Auto Confirm User".
+   Exemple : mohamed.koukou@atelierm2.com et mina.belkonso@atelierm2.com (+ un mot de passe chacun).
+   La partie avant le @ (mohamed koukou) sert de nom sur la signature des devis. Les emails peuvent être de faux emails.
+5. Menu "Project Settings" > "API" (ou bouton "Connect") : copiez "Project URL" et la clé "anon public".
+6. Ouvrez index.html avec un éditeur de texte, cherchez la ligne  const SB={url:'',key:''};
+   et remplissez : const SB={url:'https://xxxx.supabase.co',key:'eyJ...'};
+   (N'utilisez JAMAIS la clé "service_role".)
+7. Remettez le site en ligne (Netlify : glissez de nouveau le dossier).
+
+UTILISATION
+- Admin (lien en bas du site) : connectez-vous avec votre email + mot de passe Supabase.
+- Admin > Accès : changez votre mot de passe.
+- Les photos déjà ajoutées dans l'ancienne version (stockées dans un navigateur) ne sont pas transférées : ajoutez-les de nouveau depuis l'admin.
+- Si deux admins modifient en même temps, la dernière sauvegarde gagne : actualisez la page avant de modifier.
+- Un projet Supabase gratuit se met en pause après environ 7 jours sans aucune visite : ouvrez le site de temps en temps.
+- Les données privées (clients, ICE, RC, RIB) ne sont lisibles que par les admins connectés.
+- Admin > Contacts : renseignez Tel, WhatsApp, Email, ICE, RC et RIB (ICE/RC/RIB s'impriment sur les devis).
+- Le PDF des devis nécessite internet (jsPDF).
+Tant que SB reste vide, le site fonctionne comme avant (données dans un seul navigateur).

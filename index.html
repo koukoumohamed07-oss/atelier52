@@ -1,0 +1,297 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="description" content="Atelier M2 — design d’intérieur, architecture, aménagement extérieur, rénovation et 3D."><meta name="theme-color" content="#263238"><meta property="og:title" content="Atelier M2 — Interior Design"><meta property="og:type" content="website"><title>Atelier M2 — Interior Design</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='675 632 582 372'%3E%3Cpolygon points='685,995 889,641 1093,995 1011,995 889,783 767,995' fill='%23263238'/%3E%3Cpolygon points='976,755 1042,641 1246,995 1165,995 1042,783 1017,827' fill='%23f2ca75'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&display=swap">
+<style>
+:root{--bg:#fff;--soft:#f7f4ee;--card:#fff;--ink:#263238;--mut:#62727a;--gold:#e0b055;--navy:#263238;--lg:#263238;--ln:#e8e4da;--sh:0 6px 24px #26323814;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151c20;--soft:#1a2327;--card:#1f2b30;--ink:#eef1f7;--mut:#a9b7bd;--ln:#37474f;--sh:none;--lg:#eceff1;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#151c20;--soft:#1a2327;--card:#1f2b30;--ink:#eef1f7;--mut:#a9b7bd;--ln:#37474f;--sh:none;--lg:#eceff1;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.6 'Plus Jakarta Sans',system-ui,sans-serif}
+h1,h2,h3{font-weight:700;margin:0 0 .4em;line-height:1.15;letter-spacing:-.01em}h1{font-size:clamp(2.3rem,6vw,3.8rem)}h2{font-size:clamp(1.5rem,3vw,2rem)}h3{font-size:1.05rem}
+.sc{font-family:Allura,cursive;font-weight:400;color:var(--gold);display:block;font-size:1.2em}
+a{color:inherit;text-decoration:none;cursor:pointer}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;align-items:center;gap:16px;padding:12px 5vw;flex-wrap:wrap}
+.lg{display:flex;align-items:center;gap:10px;line-height:1.1}.lg b{font-size:1.15rem;display:block}.lg small{font-size:.6rem;letter-spacing:.2em;color:var(--mut)}
+nav{display:flex;gap:26px;margin-inline:auto;flex-wrap:wrap;font-size:.88rem;font-weight:500}nav a{padding-bottom:4px;border-bottom:2px solid transparent}nav a.on{border-color:var(--gold)}
+select,input,textarea,button{font:inherit;color:inherit}select,input,textarea{background:var(--bg);border:1px solid var(--ln);padding:10px 13px;border-radius:10px;width:100%}
+.lang{width:auto;padding:6px 8px}
+.btn{background:var(--navy);color:#fff;border:0;padding:11px 24px;cursor:pointer;font-weight:600;border-radius:999px;display:inline-block;width:auto}.btn.o{background:none;color:var(--ink);border:1px solid var(--ln)}.btn.g{background:var(--gold);color:#263238}.btn.s{padding:6px 14px;font-size:.8rem}
+main{max-width:1180px;margin:auto;padding:0 5vw 20px}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center;padding:40px 0;margin:0 -5vw;padding-inline:5vw;background:linear-gradient(120deg,#fbf6ea,#eceff1)}
+.hero p{max-width:440px;color:var(--mut);margin:14px 0 26px}
+.pan{border-radius:22px;min-height:320px;background:radial-gradient(circle at 70% 25%,#e0b05566,transparent 55%),linear-gradient(160deg,#1a2327,#37474f);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#fff;box-shadow:var(--sh)}
+.pan b{letter-spacing:.25em;font-weight:600}
+.strip{background:var(--soft);margin:0 -5vw;padding:34px 5vw}
+.strip .grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.f{text-align:center}.f i{display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:#fbefd0;margin:0 auto 10px;font-style:normal;font-size:1.4rem}
+.f p{color:var(--mut);font-size:.85rem;margin:0}
+section{margin:56px 0}.eyebrow{letter-spacing:.2em;font-size:.7rem;color:var(--mut);text-transform:uppercase;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:16px;padding:20px;cursor:pointer;transition:.2s;box-shadow:var(--sh);position:relative}.card:hover{transform:translateY(-3px)}
+.card.n{cursor:default}.card.n:hover{transform:none}.card p{margin:4px 0 0;color:var(--mut);font-size:.88rem}
+.thumb{height:170px;margin:-20px -20px 14px;background-size:cover;border-radius:16px 16px 0 0}
+.tag{position:absolute;top:14px;inset-inline-start:14px;background:var(--navy);color:#fff;font-size:.7rem;padding:4px 12px;border-radius:999px;font-weight:600}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;background:var(--soft);margin:56px -5vw;padding:44px 5vw}
+.about .pan{min-height:260px;font-size:2.6rem;text-align:center;line-height:1.1}
+.cta{background:linear-gradient(110deg,#263238,#37474f);color:#fff;border-radius:22px;padding:38px 5vw;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}.cta p{color:#cfd8dc;margin:6px 0 0}
+.car{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:18px}
+.sl{flex:0 0 100%;scroll-snap-align:center;height:min(60vh,460px);background-size:cover;background-position:center;position:relative}
+.cap{position:absolute;inset:auto 0 0 0;padding:16px 20px;background:linear-gradient(transparent,#000b);color:#fff}
+.nv{display:flex;gap:8px;justify-content:center;margin:12px 0}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.row>*{flex:1 1 140px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}.tabs .btn{padding:7px 14px;font-size:.8rem}
+table{width:100%;border-collapse:collapse;font-size:.85rem;display:block;overflow-x:auto}td,th{padding:8px 10px;border-bottom:1px solid var(--ln);text-align:start}
+footer{border-top:1px solid var(--ln);padding:34px 5vw 18px;font-size:.85rem;color:var(--mut)}
+.fg{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.3fr 1fr 1.3fr 1fr;gap:26px}.fg b{color:var(--ink);display:block;margin-bottom:8px}.fg a{display:block;margin:3px 0}
+.fb{max-width:1180px;margin:22px auto 0;border-top:1px solid var(--ln);padding-top:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.q{background:#fff;color:#111;padding:24px;max-width:700px}.mut{color:var(--mut)}.hid{display:none}.center{text-align:center}
+@media(max-width:760px){.hero,.about,.fg{grid-template-columns:1fr}nav{gap:14px;order:3;width:100%;justify-content:center}.pan{min-height:220px}}
+
+.hero{display:flex;align-items:center;min-height:500px;color:#fff;background:linear-gradient(135deg,#151c20,#37474f 55%,#8a6d2c);background-size:cover;background-position:center}.hero p{color:#cfd8dc;max-width:520px}.hero .sc{color:#f2ca75}
+.frs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:-34px;position:relative}
+.fr{background:var(--bg);border:1.5px solid var(--ink);padding:18px 20px;display:flex;align-items:center;gap:14px;border-radius:4px;transition:.2s}.fr small{color:var(--gold);font-weight:700}.fr b{flex:1}.fr:hover{background:var(--navy);color:#fff}
+.band{margin:0 -5vw;padding:54px 5vw}.band.navy{background:#263238;color:#fff}.band.beige{background:#f6eedb;color:#263238}
+.bi{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 1.4fr;gap:30px;align-items:center}.num{font-size:.8rem;letter-spacing:.2em;color:var(--gold);font-weight:700}.band h2{font-size:2rem;margin-top:6px}.band p{margin:0 0 16px;opacity:.85;font-size:1.02rem}
+.chips{display:flex;gap:10px;flex-wrap:wrap}.chip{border:1.5px solid currentColor;padding:7px 18px;border-radius:4px;font-size:.85rem;font-weight:600}.chip:hover{background:var(--gold);border-color:var(--gold);color:#263238}
+.lead{display:grid;gap:12px}.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin-top:14px}
+.tile{display:flex;gap:12px;align-items:center;border:1px solid var(--ln);border-radius:14px;padding:12px 14px;background:var(--card)}.tile i{flex:0 0 40px;height:40px;border-radius:50%;background:#fbefd0;display:grid;place-items:center;font-style:normal}.tile small{display:block;color:var(--mut);word-break:break-all}
+.cp{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+#md{position:fixed;inset:0;background:#000a;display:grid;place-items:center;z-index:20;padding:20px}.mb{background:var(--bg);border-radius:18px;padding:26px;max-width:460px;width:100%;max-height:90vh;overflow:auto}
+main.wide{max-width:1500px}.adm{font-size:16px}.adm input,.adm select,.adm textarea{padding:14px 16px;font-size:16px}.adm td,.adm th{padding:14px 16px}.adm th{background:var(--soft)}.adm table{min-width:1000px}.adm .btn{padding:12px 24px;font-size:.95rem}.adm .tabs .btn{padding:12px 22px}.adm h2{font-size:2rem}
+.ss[data-v="Terminé"]{background:#d9f0df;color:#14391f}.ss[data-v="En cours"]{background:#dbe7fb;color:#263238}.ss[data-v="En attente"]{background:#fbe9c9;color:#4a3410}
+@media(max-width:760px){.bi,.cp{grid-template-columns:1fr}}
+.tile i.br{background:none}.tile i.br svg{width:40px;height:40px}.soc{display:flex;gap:14px;flex-wrap:wrap}.soc a{display:block;transition:.2s}.soc a:hover{transform:translateY(-3px)}.soc svg{width:42px;height:42px;display:block}
+.hr{display:flex;gap:14px;align-items:center;flex-wrap:wrap}.hn{display:flex;gap:10px;flex-wrap:wrap}.hn a{background:transparent;border:1.5px solid #f2ca75;color:#fff;padding:10px 18px;border-radius:4px;font-size:.85rem;font-weight:600;transition:.2s}.hn a:hover{background:#f2ca75;color:#263238}
+.frm{border:1.5px solid var(--ink);border-radius:4px;box-shadow:none}.frm .thumb{border-radius:2px 2px 0 0}.frm .chip{font-size:.72rem;padding:4px 10px;margin-top:10px}.frm h3{margin-top:2px}
+.soc a{color:var(--gold)}.soc svg{width:24px;height:24px}.tile i.br{color:var(--gold);background:none}.tile i.br svg{width:26px;height:26px}
+.fg{grid-template-columns:1.3fr 1fr 1.3fr}.fb{align-items:center}
+@media(max-width:760px){.fg{grid-template-columns:1fr}.fb{justify-content:center}}
+.frm{border-radius:12px}.frm .thumb{border-radius:10px 10px 0 0}.hn a{border-radius:10px}
+.cbar{display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap;background:linear-gradient(110deg,#263238,#37474f);color:#fff;border-radius:12px;padding:18px 24px;margin:30px 0}.cbar b{display:block;font-size:1.05rem}.cbar span{color:#cfd8dc;font-size:.88rem}
+
+/* ===== Finition professionnelle ===== */
+.steps{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0 24px;counter-reset:st}
+.steps li{counter-increment:st;position:relative;border-top:2px solid var(--ln);padding:22px 0 0}
+.steps li::before{content:counter(st);position:absolute;top:-14px;inset-inline-start:0;width:26px;height:26px;border-radius:50%;background:var(--gold);color:#263238;font-weight:700;font-size:.8rem;display:grid;place-items:center}
+.steps h3{font-size:1.05rem;margin:0 0 6px}.steps p{margin:0;color:var(--mut);font-size:.88rem}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-.02em}
+.sc{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:400}
+#wa{position:fixed;inset-inline-end:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:9;width:54px;height:54px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -8px #0006;transition:transform .2s}#wa:hover{transform:scale(1.06)}#wa svg{width:28px;height:28px}
+.lead select,.lead input{font-size:.95rem}
+.hero,.band,.strip,.about{margin-inline:calc(50% - 50vw);padding-inline:max(5vw,calc((100vw - 1180px)/2 + 5vw))}
+body{overflow-x:hidden}
+header{padding-inline:max(5vw,calc((100vw - 1180px)/2 + 5vw))}
+:root{--r:12px;--sh:0 1px 2px #2632381a,0 10px 28px -14px #26323840}
+html{scroll-behavior:smooth}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3{letter-spacing:-.03em}h2{font-size:clamp(1.6rem,3vw,2.2rem)}
+::selection{background:var(--gold);color:#263238}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 3px #e0b05538}
+header{backdrop-filter:saturate(1.5) blur(14px);-webkit-backdrop-filter:saturate(1.5) blur(14px);background:color-mix(in srgb,var(--bg) 84%,transparent);border-bottom:1px solid var(--ln)}
+nav a{color:var(--mut);transition:color .2s,border-color .2s}nav a:hover,nav a.on{color:var(--ink)}
+.btn{border-radius:10px;transition:transform .15s,box-shadow .2s,filter .2s}.btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px -10px #263238aa;filter:brightness(1.06)}.btn:active{transform:none}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:clamp(540px,80vh,740px)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(95deg,#151c20f2 0%,#151c20b8 52%,#151c2040 100%),repeating-linear-gradient(0deg,#ffffff09 0 1px,transparent 1px 72px),repeating-linear-gradient(90deg,#ffffff09 0 1px,transparent 1px 72px)}
+.hero h1{max-width:13ch;line-height:1.04}
+.hn a{border-radius:var(--r);backdrop-filter:blur(6px);background:#ffffff0d}
+.frs{gap:0;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);border:1px solid var(--ln);background:var(--bg)}
+.fr{border:0;border-radius:0;border-inline-end:1px solid var(--ln);padding:22px}.fr:last-child{border-inline-end:0}
+.card,.frm,.tile,.cta,.cbar,.mb{border-radius:var(--r)}
+.card{border-color:var(--ln);transition:transform .2s,box-shadow .2s,border-color .2s}.card:hover{border-color:var(--gold);box-shadow:0 16px 36px -18px #26323860}
+.frm{border:1px solid var(--ln)}.thumb{border-radius:var(--r) var(--r) 0 0}.frm .thumb{border-radius:calc(var(--r) - 2px) calc(var(--r) - 2px) 0 0}
+.tag{border-radius:6px;background:#263238e6;backdrop-filter:blur(4px)}
+.chip{border-width:1px;border-radius:8px}
+.band,.strip,.about{position:relative}
+.band.navy{background:linear-gradient(180deg,#263238,#1d272c)}
+.about{background:var(--soft);border-block:1px solid var(--ln)}
+.cta,.cbar{border:1px solid #ffffff14;background:linear-gradient(115deg,#1d272c,#37474f)}
+.adm th{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.adm table{border:1px solid var(--ln);border-radius:var(--r)}
+.adm tr:hover td{background:var(--soft)}
+footer{background:#1a2327;color:#a9b7bd;border:0;padding:48px max(5vw,calc((100vw - 1180px)/2 + 5vw)) 22px;--lg:#fff}
+footer .fg b{color:#fff}footer a:hover{color:var(--gold)}footer .fb{border-color:#ffffff1a}footer .lg small{color:#a9b7bd}
+@media(max-width:760px){.frs{border-radius:var(--r)}.fr{border-inline-end:0;border-bottom:1px solid var(--ln)}.fr:last-child{border-bottom:0}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Atelier M2","description":"Design d’intérieur, architecture, aménagement extérieur, rénovation et 3D.","address":{"@type":"PostalAddress","addressLocality":"Agadir","addressCountry":"MA"},"email":"contact@atelierm2.com"}</script></head><body>
+<header><a class="lg" href="#home" id="hl"></a><nav id="nav"></nav><select class="lang" id="lang" aria-label="Language"><option value="fr">FR</option><option value="en">EN</option><option value="ar">AR</option></select><button class="btn s" id="hb" data-open></button></header>
+<main id="app"></main>
+<footer id="ft"></footer>
+<a id="wa" href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.6-4.8A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.5-1.8-1.3-2.3-2.3l.8-1-1-2z"/></svg></a>
+<script>
+const cu=n=>{try{return window.claude?window.claude.use(n):Promise.resolve(null)}catch(e){return Promise.resolve(null)}};
+/* ===== CONNEXION BASE DE DONNÉES (Supabase) : collez ici vos 2 valeurs (voir LISEZ-MOI.txt) ===== */
+const SB={url:'',key:''};
+const ON=()=>!!(SB.url&&SB.key);
+const H=(t,x)=>({apikey:SB.key,Authorization:'Bearer '+(t||SB.key),'Content-Type':'application/json',...(x||{})});
+let sess=null;try{sess=JSON.parse(localStorage.getItem('m2_sess')||'null')}catch(e){}
+const nameOf=e=>String(e||'').split('@')[0].replace(/[._-]/g,' ');
+const flash=m=>{let e=document.getElementById('fl');if(!e){e=document.createElement('div');e.id='fl';e.style.cssText='position:fixed;bottom:18px;right:18px;background:#14284b;color:#fff;padding:10px 16px;border-radius:10px;z-index:30;font-size:.85rem';document.body.appendChild(e)}e.textContent=m;e.style.display='block';clearTimeout(e._t);e._t=setTimeout(()=>e.style.display='none',2500)};
+async function tok(){if(!sess)return null;let ex=0;try{ex=JSON.parse(atob(sess.access_token.split('.')[1].replace(/-/g,'+').replace(/_/g,'/'))).exp*1000}catch(e){}
+if(Date.now()>ex-60000){try{const r=await fetch(SB.url+'/auth/v1/token?grant_type=refresh_token',{method:'POST',headers:H(),body:JSON.stringify({refresh_token:sess.refresh_token})});if(!r.ok)throw 0;const j=await r.json();sess={access_token:j.access_token,refresh_token:j.refresh_token,email:sess.email};localStorage.setItem('m2_sess',JSON.stringify(sess))}catch(e){sess=null;localStorage.removeItem('m2_sess');adm=null;return null}}return sess.access_token}
+async function signIn(email,pw){try{const r=await fetch(SB.url+'/auth/v1/token?grant_type=password',{method:'POST',headers:H(),body:JSON.stringify({email,password:pw})});if(!r.ok)return false;const j=await r.json();sess={access_token:j.access_token,refresh_token:j.refresh_token,email};localStorage.setItem('m2_sess',JSON.stringify(sess));return true}catch(e){return false}}
+async function sb(path,o,auth){const t=auth?await tok():null;if(auth&&!t)throw new Error('session');const r=await fetch(SB.url+'/rest/v1/'+path,{...(o||{}),headers:H(t,o&&o.headers)});if(!r.ok)throw new Error(await r.text());return r.status==204?null:r.json().catch(()=>null)}
+const PRIV=['ICE','RC','RIB'];
+const LOGO=(w=44,lt)=>`<svg width="${w}" viewBox="675 632 582 372" aria-label="Atelier M2" role="img"><polygon points="685,995 889,641 1093,995 1011,995 889,783 767,995" style="fill:${lt?'#fff':'var(--lg)'}"/><polygon points="976,755 1042,641 1246,995 1165,995 1042,783 1017,827" fill="#f2ca75"/></svg>`;
+const L={
+fr:{home:'Accueil',svc:'Services',rev:'Avis',ct:'Contact',about:'À propos',slogan:'Des espaces qui vous ressemblent',intro:'Atelier M2 est un atelier de design d’intérieur et d’architecture. Nous créons des espaces élégants, fonctionnels et sur mesure, de la conception à la réalisation.',svcd:'Nos services en bref',cb:'Bâtiment',cbd:'Villas, maisons et plans 2D conçus avec soin.',ci:'Design intérieur',cid:'Aménagements élégants et fonctionnels.',ce:'Aménagement extérieur',ced:'Jardins, terrasses et espaces naturels.',cr:'Rénovation & 3D',crd:'Rénovation complète et rendus 3D réalistes.',villa:'Villa',house:'Maison',p2d:'Plans 2D',apt:'Appartement',shop:'Commerce',garden:'Jardin',terrace:'Terrasse',reno:'Rénovation',p3d:'Rendu 3D',back:'← Retour',interest:'Ce projet m’intéresse',name:'Nom',email:'Email',phone:'Téléphone (WhatsApp)',send:'Envoyer',thanks:'Merci ! Nous vous contacterons très vite.',none:'Aucun projet pour le moment.',ctd:'Parlons de votre projet',revt:'Avis de nos clients'},
+en:{home:'Home',svc:'Services',rev:'Reviews',ct:'Contact',about:'About',slogan:'Spaces that look like you',intro:'Atelier M2 is an interior design and architecture studio. We craft elegant, functional, tailor-made spaces, from concept to completion.',svcd:'Our services at a glance',cb:'Building',cbd:'Villas, houses and 2D plans, carefully designed.',ci:'Interior design',cid:'Elegant and functional interiors.',ce:'Outdoor design',ced:'Gardens, terraces and natural spaces.',cr:'Renovation & 3D',crd:'Full renovation and realistic 3D renders.',villa:'Villa',house:'House',p2d:'2D plans',apt:'Apartment',shop:'Commercial',garden:'Garden',terrace:'Terrace',reno:'Renovation',p3d:'3D render',back:'← Back',interest:'I’m interested in this project',name:'Name',email:'Email',phone:'Phone (WhatsApp)',send:'Send',thanks:'Thank you! We will contact you shortly.',none:'No projects yet.',ctd:'Let’s talk about your project',revt:'What our clients say'},
+ar:{home:'الرئيسية',svc:'الخدمات',rev:'آراء العملاء',ct:'اتصل بنا',about:'من نحن',slogan:'مساحات تشبهك',intro:'ميفا ستوديو استوديو للتصميم الداخلي والهندسة المعمارية. نبتكر مساحات أنيقة وعملية ومفصّلة حسب الطلب، من الفكرة إلى التنفيذ.',svcd:'خدماتنا باختصار',cb:'المباني',cbd:'فيلات ومنازل ومخططات ثنائية الأبعاد بعناية.',ci:'التصميم الداخلي',cid:'تصاميم داخلية أنيقة وعملية.',ce:'التهيئة الخارجية',ced:'حدائق وشرفات ومساحات طبيعية.',cr:'الترميم و3D',crd:'ترميم كامل ومجسمات ثلاثية الأبعاد واقعية.',villa:'فيلا',house:'منزل',p2d:'مخططات 2D',apt:'شقة',shop:'تجاري',garden:'حديقة',terrace:'شرفة',reno:'ترميم',p3d:'تصميم 3D',back:'→ رجوع',interest:'هذا المشروع يهمّني',name:'الاسم',email:'البريد الإلكتروني',phone:'الهاتف (واتساب)',send:'إرسال',thanks:'شكراً! سنتواصل معكم قريباً.',none:'لا توجد مشاريع بعد.',ctd:'لنتحدث عن مشروعك',revt:'آراء عملائنا'}};
+Object.assign(L.fr,{cta:'Démarrer',feat:'Projets sélectionnés',all:'Voir tout',more:'Plus qu’un simple décor',qk:'Liens rapides',git:'Contact',fu:'Suivez-nous',ready:'Prêt à créer votre espace ?',ps:'Un atelier, une vision'});
+Object.assign(L.en,{cta:'Get Started',feat:'Handpicked projects',all:'View all',more:'More than just a home',qk:'Quick links',git:'Get in touch',fu:'Follow us',ready:'Ready to create your space?',ps:'One studio, one vision'});
+Object.assign(L.ar,{cta:'ابدأ',feat:'مشاريع مختارة',all:'عرض الكل',more:'أكثر من مجرد منزل',qk:'روابط سريعة',git:'تواصل معنا',fu:'تابعونا',ready:'هل أنت مستعد لتصميم مساحتك؟',ps:'استوديو واحد، رؤية واحدة'});
+Object.assign(L.fr,{want:'Que souhaitez-vous ?',msg:'Parlez-nous de votre projet',other:'Autre',cform:'Dites-nous ce que vous voulez',brief:'Services en bref'});
+Object.assign(L.en,{want:'What do you need?',msg:'Tell us about your project',other:'Other',cform:'Tell us what you want',brief:'Services at a glance'});
+Object.assign(L.ar,{want:'ماذا تريد؟',msg:'حدثنا عن مشروعك',other:'أخرى',cform:'أخبرنا بما تريد',brief:'خدماتنا باختصار'});
+Object.assign(L.fr,{off:'Offres',offt:'Nos offres du moment',until:'Valable jusqu’au',claim:'Profiter de l’offre',none2:'Aucune offre pour le moment.',ctb:'Nous contacter',ctt:'Une question ? Écrivez-nous en quelques secondes.'});
+Object.assign(L.en,{off:'Offers',offt:'Our current offers',until:'Valid until',claim:'Get this offer',none2:'No offers right now.',ctb:'Contact us',ctt:'Got a question? Write to us in seconds.'});
+Object.assign(L.ar,{off:'العروض',offt:'عروضنا الحالية',until:'صالح حتى',claim:'استفد من العرض',none2:'لا توجد عروض حالياً.',ctb:'اتصل بنا',ctt:'هل لديك سؤال؟ راسلنا في ثوانٍ.'});
+const ICO={b:'🏠',i:'🛋️',e:'🌿',r:'📐'};
+function foot(){const c=S.contacts;{const w=c.WhatsApp&&c.WhatsApp!='https://wa.me/'?c.WhatsApp:'https://wa.me/'+String(c.Tel||'').replace(/\D/g,'');const a=document.getElementById('wa');if(a)a.href=w}$('#ft').innerHTML=`<div class="fg"><div><a class="lg" href="#home">${LOGO(38)}<span><b>Atelier M2</b><small>INTERIOR DESIGN</small></span></a></div><div><b>${t('qk')}</b><a href="#home">${t('home')}</a><a href="#svc">${t('svc')}</a><a href="#offers">${t('off')}</a><a href="#rev">${t('rev')}</a><a href="#ct">${t('ct')}</a></div><div><b>${t('git')}</b><span>${esc(c.Tel||'')}<br>${esc(c.Email||'')}<br>${esc(c.Adresse||'')}</span></div></div><div class="fb"><span>© 2026 Atelier M2</span><div class="soc">${Object.keys(c).filter(k=>!['Tel','Adresse','Email','ICE','RC','RIB'].includes(k)).map(k=>`<a href="${esc(c[k])}" target="_blank" rel="noopener" aria-label="${esc(k)}" title="${esc(k)}">${BR[k]||esc(k)}</a>`).join('')}</div><a href="#admin">Admin</a></div>`}
+const CATS={b:['villa','house','p2d'],i:['apt','shop'],e:['garden','terrace'],r:['reno','p3d']};
+const CK={b:'cb',i:'ci',e:'ce',r:'cr'};
+const seed=()=>({ov:{},cs:[],hide:[],offers:[],contacts:{ICE:'',RC:'',RIB:'',Instagram:'https://instagram.com/',Facebook:'https://facebook.com/',WhatsApp:'https://wa.me/',LinkedIn:'https://linkedin.com/',Tel:'+212 000 000 000',Adresse:'Agadir, Maroc',Email:'contact@atelierm2.com'},
+projects:[{id:'p1',sub:'villa',title:'Villa 1',photos:[{d:'Salon lumineux',h:35},{d:'Façade principale',h:210}]},{id:'p2',sub:'villa',title:'Villa 2',photos:[{d:'Terrasse',h:30}]},{id:'p3',sub:'house',title:'Maison 1',photos:[{d:'Séjour',h:40}]},{id:'p4',sub:'apt',title:'Appartement 1',photos:[{d:'Cuisine ouverte',h:25}]}],
+reviews:[{n:'Client 1',t:'Un travail soigné et une équipe à l’écoute.'},{n:'Client 2',t:'Notre intérieur est exactement comme nous l’imaginions.'}],
+clients:[],leads:[],users:[{u:'mohamed koukou',p:'mifa-m2026'},{u:'mina belkonso',p:'mifa-n2026'}]});
+let S=seed(),lang=localStorage.getItem('m2_lang')||'fr',db=null,adm=null,tab='clients',saveT;
+const t=k=>S.ov[lang+k]||L[lang][k]||L.fr[k]||k;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const $=s=>document.querySelector(s),app=$('#app');
+const bg=p=>p.src?`background-image:url('${p.src}')`:`background:linear-gradient(135deg,hsl(${p.h||30} 35% 30%),hsl(${(p.h||30)+30} 40% 60%))`;
+function persist(){clearTimeout(saveT);saveT=setTimeout(async()=>{if(!ON()){try{localStorage.setItem('m2_state',JSON.stringify(S))}catch(e){}return}
+try{const {leads,users,clients,st,contacts,...pub}=S,pc={...contacts},biz={};PRIV.forEach(k=>{biz[k]=pc[k]||'';delete pc[k]});
+const up=(tb,data)=>sb(tb,{method:'POST',headers:{Prefer:'resolution=merge-duplicates,return=minimal'},body:JSON.stringify({id:'main',data})},1);
+await up('site_public',{...pub,contacts:pc});await up('site_private',{clients,st,biz});flash('Enregistré ✓')}catch(e){flash('Erreur d’enregistrement : reconnectez-vous')}},300)}
+async function pull(priv){try{const a=await sb('site_public?id=eq.main&select=data');if(a&&a[0])S={...S,...a[0].data};if(priv){const b=await sb('site_private?id=eq.main&select=data',{},1);if(b&&b[0]){const d=b[0].data;S.clients=d.clients||[];S.st=d.st||{};S.contacts={...S.contacts,...(d.biz||{})}}}}catch(e){}S.contacts={ICE:'',RC:'',RIB:'',...S.contacts}}
+async function load(){if(ON()){await pull(false);if(sess&&await tok()){adm=nameOf(sess.email);await pull(true)}}else{try{const raw=localStorage.getItem('m2_state');if(raw)S={...S,...JSON.parse(raw)}}catch(e){}S.contacts={ICE:'',RC:'',RIB:'',...S.contacts}}render()}
+async function addLead(l){if(ON()){try{await sb('leads',{method:'POST',headers:{Prefer:'return=minimal'},body:JSON.stringify({id:l.id,data:l})});return true}catch(e){flash('Envoi impossible, réessayez');return false}}S.leads.push(l);persist();return true}
+async function getLeads(){if(ON()){try{const a=await sb('leads?select=data&order=created_at.desc',{},1);return a.map(x=>x.data)}catch(e){flash('Lecture des demandes impossible');return []}}return S.leads.slice()}
+function nav(){const h=location.hash.slice(1)||'home';$('#nav').innerHTML=[['home','home'],['svc','svc'],['offers','off'],['rev','rev'],['ct','ct']].map(([a,k])=>`<a href="#${a}" class="${h==a?'on':''}"${h==a?' aria-current="page"':''}>${t(k)}</a>`).join('');document.title=(h=='home'?'Atelier M2 — Interior Design':(({svc:t('svc'),offers:t('off'),rev:t('rev'),ct:t('ct'),admin:'Admin'})[h]||t('svc'))+' — Atelier M2');$('#hl').innerHTML=LOGO(42)+'<span><b>Atelier M2</b><small>INTERIOR DESIGN</small></span>';$('#hb').textContent=t('cta');foot()}
+const cards=(ids,go,txt)=>`<div class="grid">${ids.map(i=>`<a class="card" href="#${go}-${i}"><h3>${txt(i)}</h3></a>`).join('')}</div>`;
+const catbg=c=>{const u=(S.imgs||{})['c_'+c];return u?`background-image:url('${u}')`:'background:linear-gradient(135deg,#263238,#455a64 60%,#e0b055)'};
+const svcList=()=>Object.keys(CATS).filter(c=>!S.hide.includes(c)).map(c=>({id:c,n:t(CK[c]),d:t(CK[c]+'d'),subs:CATS[c].map(x=>t(x)),h:'#c-'+c})).concat(S.cs.map(x=>({id:x.id,n:x.name,d:x.desc,subs:[],h:'#s-'+x.id})));
+const svcAll=()=>Object.keys(CATS).map(c=>({id:c,n:t(CK[c]),d:t(CK[c]+'d'),b:1,off:S.hide.includes(c)})).concat(S.cs.map(x=>({id:x.id,n:x.name,d:x.desc,b:0})));
+const nm=id=>(S.cs.find(x=>x.id==id)||{}).name||t(id);
+const svcCards=()=>`<div class="grid">${svcList().map((x,i)=>`<a class="card frm" href="${x.h}"><div class="thumb" style="height:130px;${catbg(x.id)}"></div><small class="num">0${i+1}</small><h3>${esc(x.n)}</h3><p>${esc(x.d)}</p><div class="chips">${x.subs.map(y=>`<span class="chip">${esc(y)}</span>`).join('')}</div></a>`).join('')}</div>`;
+const BR={Instagram:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-label="Instagram"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>`,Facebook:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-label="Facebook"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5v4h3v7h4v-7h3l1-4h-4V7.5c0-.3.2-.5.5-.5H15z"/></svg>`,LinkedIn:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-label="LinkedIn"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.01M12 17v-6m0 3c0-2 1.2-3 2.8-3S17 12 17 14v3"/></svg>`,WhatsApp:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-label="WhatsApp"><path d="M3 21l1.6-4.8A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.5-1.8-1.3-2.3-2.3l.8-1-1-2z"/></svg>`};
+const ICO2={Tel:'📞',Email:'✉️',WhatsApp:'💬',Instagram:'📸',Facebook:'👥',LinkedIn:'💼',Adresse:'📍'};
+const today=()=>new Date().toISOString().slice(0,10);
+const tiles=()=>`<div class="tiles">${Object.entries(S.contacts).filter(([k])=>!['ICE','RC','RIB'].includes(k)).map(([k,v])=>{const a=k=='Adresse'?'':k=='Tel'?`href="tel:${esc(v)}"`:`href="${esc(v)}" target="_blank" rel="noopener"`,tg=a?'a':'div';return `<${tg} class="tile" ${a}><i class="${BR[k]?'br':''}">${BR[k]||ICO2[k]||'🔗'}</i><span><b>${esc(k)}</b><small>${esc(v)}</small></span></${tg}>`}).join('')}</div>`;
+const leadForm=(pr='')=>`<form class="lead" data-pr="${esc(pr)}"><div class="row"><input name="n" required placeholder="${t('name')}"><input name="p" type="tel" required placeholder="${t('phone')}"></div><input name="e" type="email" required placeholder="${t('email')}"><div class="row"><input name="v" placeholder="${{fr:'Ville du projet',en:'Project city',ar:'مدينة المشروع'}[lang]||'Ville'}"><select name="b"><option value="">${{fr:'Budget estimé',en:'Estimated budget',ar:'الميزانية'}[lang]||'Budget'}</option><option>&lt; 50 000 MAD</option><option>50 000 – 150 000 MAD</option><option>150 000 – 400 000 MAD</option><option>&gt; 400 000 MAD</option><option>${{fr:'À définir',en:'Not sure yet',ar:'غير محدد'}[lang]||'-'}</option></select></div><select name="ty" required><option value="" disabled selected>${t('want')}</option>${svcList().map(x=>`<option value="${esc(x.n)}">${esc(x.n)}</option>`).join('')}<option value="${t('other')}">${t('other')}</option></select><textarea name="m" rows="3" placeholder="${t('msg')}"></textarea><button class="btn g">${t('send')}</button></form>`;
+const contactBlock=()=>`<section><div class="eyebrow">${t('ct')}</div><h2>${t('ctd')}</h2>${tiles()}</section>`;
+const contactPage=()=>`<section class="cp"><div><div class="eyebrow">${t('ct')}</div><h2>${t('cform')}</h2><div class="card n">${leadForm()}</div></div><div><h3>${t('ctd')}</h3>${tiles()}</div></section>`;
+const openModal=(pr='')=>{const m=document.createElement('div');m.id='md';m.innerHTML=`<div class="mb"><div class="row"><h2 style="margin:0">${t('ctd')}</h2><button class="btn o s" data-x style="flex:0">✕</button></div><br>${leadForm(pr)}</div>`;document.body.appendChild(m)};
+document.addEventListener('click',e=>{const o=e.target.closest('[data-open]');if(o){openModal(o.dataset.pr||'');return}if(e.target.id=='md'||e.target.closest('[data-x]'))document.getElementById('md')?.remove()});
+document.addEventListener('submit',async e=>{const f=e.target;if(!f.classList.contains('lead'))return;e.preventDefault();const d=new FormData(f);const ok=await addLead({id:'l'+Date.now(),n:d.get('n'),e:d.get('e'),p:d.get('p'),ty:d.get('ty'),m:[d.get('v')&&'Ville : '+d.get('v'),d.get('b')&&'Budget : '+d.get('b')].filter(Boolean).concat(d.get('m')||[]).join(' | '),project:f.dataset.pr||'',date:today()});if(ok===false)return;f.innerHTML=`<p>${t('thanks')}</p>`});
+function render(){document.documentElement.lang=lang;document.documentElement.dir=lang=='ar'?'rtl':'ltr';$('#lang').value=lang;nav();const h=location.hash.slice(1)||'home',[r,id]=[h.split('-')[0],h.split('-').slice(1).join('-')];let o='';
+if(r=='home'){const w=t('slogan').split(' '),n=lang=='ar'?1:2,im=S.imgs||{},hs=im.hero?`background-image:linear-gradient(#0a142899,#0a1428cc),url('${im.hero}')`:'';
+o=`<div class="hero" style="${hs}"><div>${LOGO(80,1)}<div class="eyebrow" style="color:#e3c58f;margin:12px 0">Interior Design · Architecture</div><h1>${esc(w.slice(0,-n).join(' '))}<span class="sc">${esc(w.slice(-n).join(' '))}</span></h1><p>${esc(t('intro'))}</p><div class="hr"><button class="btn g" data-open>${t('cta')} →</button><nav class="hn">${svcList().map(x=>`<a href="${x.h}">${esc(x.n)}</a>`).join('')}</nav></div></div></div>
+<section><div class="eyebrow">${t('svc')}</div><h2>${t('brief')}</h2>${svcCards()}</section>${method()}<div class="cbar"><div><b>${t('ct')}</b><span>${t('ctt')}</span></div><button class="btn g" data-open>${t('ctb')}</button></div>`}
+else if(r=='svc')o=`<section><h2>${t('svc')}</h2>${svcCards()}</section>`;
+else if(r=='c')o=`<section><a href="#svc" class="mut">${t('back')}</a><h2>${t(CK[id])}</h2>${cards(CATS[id]||[],'s',i=>t(i))}</section>`;
+else if(r=='s'){const ps=S.projects.filter(p=>p.sub==id);o=`<section><a href="#svc" class="mut">${t('back')}</a><h2>${esc(nm(id))}</h2>${ps.length?`<div class="grid">${ps.map(p=>`<a class="card" href="#p-${p.id}"><div class="thumb" style="${bg(p.photos[0]||{})}"></div><h3>${esc(p.title)}</h3></a>`).join('')}</div>`:`<p class="mut">${t('none')}</p>`}</section>`}
+else if(r=='p'){const p=S.projects.find(x=>x.id==id);if(!p)return location.hash='#svc';o=`<section><a href="#s-${p.sub}" class="mut">${t('back')}</a><h2>${esc(p.title)}</h2><span class="tag" style="position:static;display:inline-block">${esc(nm(p.sub))}</span>${p.desc?`<p class="mut">${esc(p.desc)}</p>`:''}<br><br><div class="car" id="car">${p.photos.map(f=>`<div class="sl" style="${bg(f)}"><div class="cap">${esc(f.d)}</div></div>`).join('')}</div><div class="nv"><button class="btn o s" data-n="-1">‹</button><button class="btn o s" data-n="1">›</button></div><div class="center"><button class="btn g" id="int">${t('interest')}</button></div><div id="lf" class="hid card n" style="max-width:460px;margin:16px auto">${leadForm(p.title)}</div></section>`}
+else if(r=='offers')o=`<section><div class="eyebrow">${t('off')}</div><h2>${t('offt')}</h2>${S.offers.length?`<div class="grid">${S.offers.map(x=>`<div class="card n">${x.img?`<div class="thumb" style="background-image:url('${x.img}')"></div>`:''}${x.p?`<span class="tag" style="position:static;display:inline-block;margin-bottom:10px;background:var(--gold)">${esc(x.p)}</span>`:''}<h3>${esc(x.t)}</h3><p>${esc(x.d)}</p>${x.u?`<p class="mut"><small>${t('until')} ${esc(x.u)}</small></p>`:''}<br><button class="btn g s" data-open data-pr="${esc(x.t)}">${t('claim')}</button></div>`).join('')}</div>`:`<p class="mut">${t('none2')}</p>`}</section>`;
+else if(r=='rev')o=`<section><h2>${t('revt')}</h2><div class="grid">${S.reviews.map(v=>`<div class="card n"><p>“${esc(v.t)}”</p><b>${esc(v.n)}</b></div>`).join('')}</div></section>`;
+else if(r=='ct')o=contactPage();
+else if(r=='admin')return admin();
+app.className='';app.innerHTML=o;scrollTo(0,0);
+const car=$('#car');if(car){document.querySelectorAll('[data-n]').forEach(b=>b.onclick=()=>car.scrollBy({left:+b.dataset.n*car.clientWidth*(lang=='ar'?-1:1),behavior:'smooth'}));$('#int').onclick=()=>$('#lf').classList.toggle('hid')}}
+/* ---------- ADMIN (FR) ---------- */
+const METH={fr:{h:'Notre méthode',s:[['Rencontre','Nous écoutons vos besoins, votre budget et votre mode de vie.'],['Plans 2D et 3D','Nous dessinons les plans et vous montrons le rendu avant tout travaux.'],['Devis détaillé','Un devis clair, poste par poste, sans surprise.'],['Réalisation','Suivi du chantier et coordination des artisans.'],['Livraison','Finitions, réception et remise des clés.']]},
+en:{h:'How we work',s:[['Meeting','We listen to your needs, budget and lifestyle.'],['2D and 3D plans','We draw the plans and show you the result before any work starts.'],['Detailed quote','A clear, line-by-line quote with no surprises.'],['Build','Site follow-up and coordination of the craftsmen.'],['Handover','Finishing touches, inspection and key handover.']]},
+ar:{h:'طريقة عملنا',s:[['اللقاء','نستمع إلى احتياجاتك وميزانيتك ونمط حياتك.'],['مخططات 2D و3D','نرسم المخططات ونريك النتيجة قبل بدء الأشغال.'],['عرض سعر مفصل','عرض سعر واضح بند ببند دون مفاجآت.'],['التنفيذ','متابعة الورش وتنسيق الحرفيين.'],['التسليم','اللمسات الأخيرة والمعاينة وتسليم المفاتيح.']]}};
+const method=()=>{const m=METH[lang]||METH.fr;return `<section><h2>${m.h}</h2><ol class="steps">${m.s.map(x=>`<li><h3>${x[0]}</h3><p>${x[1]}</p></li>`).join('')}</ol></section>`};
+const gen=()=>'m2-'+Math.random().toString(36).slice(2,8)+Math.floor(Math.random()*90+10);
+const TABS={clients:'Suivi clients',quote:'Devis',projects:'Projets',services:'Services',offers:'Offres',photos:'Photos du site',reviews:'Avis',contacts:'Contacts',content:'Textes du site',users:'Accès'};
+const ST=['Nouveau','En cours','En attente','Terminé'];
+const shrink=(f,m=1600)=>new Promise(r=>{const i=new Image,u=URL.createObjectURL(f);i.onload=()=>{const k=Math.min(1,m/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=i.width*k;c.height=i.height*k;c.getContext('2d').drawImage(i,0,0,c.width,c.height);URL.revokeObjectURL(u);r(c.toDataURL('image/jpeg',.78))};i.onerror=()=>r('');i.src=u});
+async function upImg(f){if(ON()){try{const t=await tok(),d=await shrink(f),bl=await (await fetch(d)).blob(),n=Date.now()+'-'+Math.random().toString(36).slice(2,7)+'.jpg',r=await fetch(SB.url+'/storage/v1/object/site/'+n,{method:'POST',headers:{apikey:SB.key,Authorization:'Bearer '+t,'Content-Type':'image/jpeg'},body:bl});if(!r.ok)throw 0;return SB.url+'/storage/v1/object/public/site/'+n}catch(e){flash('Échec de l’envoi de la photo');return''}}return shrink(f)}
+const loadPdf=()=>new Promise((ok,ko)=>{if(window.jspdf)return ok();const x=document.createElement('script');x.src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';x.onload=ok;x.onerror=ko;document.head.appendChild(x)});
+const upd=(id,o)=>{S.st[id]={...(S.st[id]||{}),...o,d:today()};persist()};
+async function makePdf(I,rows){await loadPdf();const {jsPDF}=window.jspdf,d=new jsPDF({unit:'mm',format:'a4'}),W=210,N=[38,50,56],G=[242,202,117],Gr=[104,116,122],c=S.contacts,cur=I.m||'MAD',nm=(adm||'').replace(/\b\w/g,x=>x.toUpperCase()),no=Date.now().toString().slice(-6);
+const R=(x,y,w,h,col)=>{d.setFillColor(...col);d.rect(x,y,w,h,'F')};
+const P=(pts,col)=>{d.setFillColor(...col);const [a,...r]=pts;d.lines(r.map((p,i)=>[p[0]-(i?r[i-1][0]:a[0]),p[1]-(i?r[i-1][1]:a[1])]),a[0],a[1],[1,1],'F',true)};
+const T=(s,x,y,o={},sz=9,st='normal',col=N)=>{d.setFont('helvetica',st);d.setFontSize(sz);d.setTextColor(...col);d.text(String(s),x,y,o)};
+const mark=(ox,oy,k)=>{const q=a=>a.map(p=>[ox+(p[0]-685)*k,oy+(p[1]-641)*k]);P(q([[685,995],[889,641],[1093,995],[1011,995],[889,783],[767,995]]),N);P(q([[976,755],[1042,641],[1246,995],[1165,995],[1042,783],[1017,827]]),G)};
+const foot=()=>{const lg=[c.ICE&&'ICE : '+c.ICE,c.RC&&'RC : '+c.RC].filter(Boolean).join('   |   ');if(lg)T(lg,W/2,284,{align:'center'},7,'normal',Gr);R(105,288,105,9,G);P([[0,288],[103,288],[107,292.5],[103,297],[0,297]],N)};
+const ico=(x,y,l)=>{R(x,y,6.5,6.5,G);T(l,x+3.25,y+4.6,{align:'center'},7,'bold',N)};
+/* en-tete */
+R(0,0,W,40,N);P([[0,0],[88,0],[76,40],[0,40]],[255,255,255]);P([[88,0],[94,0],[82,40],[76,40]],G);
+mark(12,12,.04);T('ATELIER M2',37,22,{},13.5,'bold');T('INTERIOR DESIGN',37,27.5,{charSpace:.6},6.5,'normal',[214,168,70]);
+const ct=[['T',c.Tel||''],['@',[c.Email,c.Site].filter(Boolean).join('\n')],['A',c.Adresse||'']];
+[[100,0],[131,1],[165,2]].forEach(([x,i])=>{const [l,v]=ct[i];ico(x,15,l);d.splitTextToSize(v,i==1?32:28).slice(0,3).forEach((t,j)=>T(t,x+9,17.2+j*4,{},7,'normal',[255,255,255]))});
+/* client / titre / infos */
+T('Devis pour',15,56,{},8.5,'normal',Gr);T(I.c||'-',15,62,{},13,'bold');R(15,64,7,.7,G);let ly=70;[I.p&&'T : '+I.p,I.e&&'E : '+I.e,I.a&&'A : '+I.a].forEach(v=>{if(v){T(v,15,ly,{},8.5,'normal',Gr);ly+=4.8}});
+T('DEVIS',100,64,{align:'center'},26,'bold');
+const dt=new Date();dt.setDate(dt.getDate()+30);const vd=dt.toLocaleDateString('fr-FR');
+T('N°',138,56,{},9,'bold');T(': MS-'+no,158,56,{},9);T('Date',138,62,{},9,'bold');T(': '+today(),158,62,{},9);T('Valable',138,68,{},9,'bold');T(': '+vd,158,68,{},9);
+T('Projet',138,74,{},9,'bold');T(': '+String(I.d||'-').slice(0,22),158,74,{},9);
+/* tableau */
+const th=y=>{R(130,y,65,10,G);P([[15,y],[130,y],[134,y+5],[130,y+10],[15,y+10]],N);T('DÉSIGNATION',20,y+6.5,{},8,'bold',[255,255,255]);T('QTÉ',147,y+6.5,{align:'center'},8,'bold');T('PRIX',169,y+6.5,{align:'right'},8,'bold');T('TOTAL',192,y+6.5,{align:'right'},8,'bold')};
+th(92);let y=103,sub=0,k=0;
+rows.forEach(r=>{if(y>232){foot();d.addPage();y=24;th(y-4);y+=11;k=0}R(15,y,180,13,k%2?[236,239,241]:[246,248,249]);T(String(r[0]).slice(0,55),20,y+5.2,{},10,'bold');if(r[1])T(String(r[1]).slice(0,90),20,y+9.6,{},7.5,'normal',Gr);const v=r[2]*r[3];sub+=v;T(r[2],147,y+7.2,{align:'center'},10);T(r[3].toFixed(2),169,y+7.2,{align:'right'},10);T(v.toFixed(2),192,y+7.2,{align:'right'},10,'bold');y+=13;k++});
+if(y>205){foot();d.addPage();y=24}y+=8;const ty=y,dc=sub*(I.rem||0)/100,tx=(sub-dc)*(I.tva||0)/100,tot=sub-dc+tx;
+T('Sous-total',125,y,{},9.5,'bold');T(': '+sub.toFixed(2),192,y,{align:'right'},9.5,'bold');y+=6;
+T('Remise',125,y,{},9.5);T(': '+(I.rem?'-'+dc.toFixed(2)+' ('+I.rem+'%)':'0%'),192,y,{align:'right'},9.5);y+=6;
+T('TVA',125,y,{},9.5);T(': '+(I.tva?tx.toFixed(2)+' ('+I.tva+'%)':'0%'),192,y,{align:'right'},9.5);y+=5;
+R(150,y,45,10,G);P([[120,y],[150,y],[154,y+5],[150,y+10],[120,y+10]],N);T('TOTAL',126,y+6.6,{},9.5,'bold',[255,255,255]);T(tot.toFixed(2)+' '+cur,192,y+6.8,{align:'right'},10.5,'bold');
+T('Mode de paiement',20,ty,{},10,'bold');R(20,ty+2,8,.7,G);d.splitTextToSize((I.pay||'Virement / Espèces / Chèque')+(c.RIB?'\nRIB : '+c.RIB:''),85).forEach((l,i)=>T(l,20,ty+8+i*4.5,{},8.5,'normal',Gr));
+/* bas de page */
+let sy=Math.max(y+30,236);if(sy>252){foot();d.addPage();sy=60}
+T('MERCI DE VOTRE',20,sy+4,{},12,'bold');T('CONFIANCE',20,sy+10,{},12,'bold');T('Devis valable 30 jours. Bon pour accord, date et signature du client :',20,sy+16,{},7.5,'normal',Gr);R(20,sy+27,60,.3,N);
+d.setFont('times','italic');d.setFontSize(17);d.setTextColor(...N);d.text(nm,160,sy+4,{align:'center'});R(135,sy+8,50,.3,N);T(nm||'Atelier M2',160,sy+14,{align:'center'},10,'bold');T('Atelier M2',160,sy+19,{align:'center'},8,'normal',Gr);
+foot();return d.output('blob')}
+async function admin(){app.className='wide';S.st=S.st||{};S.imgs=S.imgs||{};
+if(!adm){app.innerHTML=`<section style="max-width:420px;margin:auto" class="adm"><h2>Admin</h2><form id="lg" class="card n"><input name="u" placeholder="${ON()?'Email':'Utilisateur'}" required><br><br><input name="p" type="password" placeholder="Mot de passe" required><br><br><button class="btn">Connexion</button> <span id="er" class="mut"></span></form></section>`;$('#lg').onsubmit=async e=>{e.preventDefault();const f=new FormData(e.target);if(ON()){const em=f.get('u').trim().toLowerCase();if(await signIn(em,f.get('p'))){adm=nameOf(em);await pull(true);admin()}else $('#er').textContent='Identifiants incorrects';return}const u=S.users.find(x=>x.u==f.get('u').trim().toLowerCase()&&x.p==f.get('p'));if(u){adm=u.u;admin()}else $('#er').textContent='Identifiants incorrects'};return}
+let b='';
+if(tab=='clients'){const ls=await getLeads(),rows=ls.concat(S.clients.map(c=>({id:c.id||'m'+c.n,n:c.n,ty:c.ty,p:c.p,e:c.e,m:c.m||c.w,date:c.date||c.d,s:c.s}))).map(r=>({...r,...(S.st[r.id]||{})})).filter(r=>!r.x);
+b=`<form id="cf" class="row"><input name="n" required placeholder="Nom du client"><input name="ty" placeholder="Type de projet"><input name="p" placeholder="Téléphone"><input name="e" placeholder="Email"><button class="btn">+ Ajouter un client</button></form><br><table><tr><th>Date<th>Nom<th>Souhaite<th>Téléphone<th>Email<th>Message / Projet<th>Travail effectué<th>Statut<th></tr>${rows.map(r=>`<tr><td>${esc(r.d||r.date)}<td><b>${esc(r.n)}</b><td>${esc(r.ty)}<td>${esc(r.p)}<td>${esc(r.e)}<td>${esc((r.project?r.project+' — ':'')+(r.m||''))}<td><input data-w="${r.id}" value="${esc(r.w)}" placeholder="Ex : plans livrés"><td><select class="ss" data-s="${r.id}" data-v="${r.s||'Nouveau'}">${ST.map(x=>`<option ${x==(r.s||'Nouveau')?'selected':''}>${x}</option>`).join('')}</select><td><button class="btn s o" data-dc="${r.id}">✕</button></tr>`).join('')||'<tr><td>Aucune demande pour le moment.</tr>'}</table>`}
+if(tab=='quote')b=`<div class="row"><input id="qc" placeholder="Nom du client"><input id="qp" placeholder="Téléphone du client"><input id="qe" placeholder="Email du client"></div><br><div class="row"><input id="qa2" placeholder="Adresse du client"><input id="qd" placeholder="Projet / destination"><input id="qm" value="MAD" style="max-width:110px;flex:0 0 110px" title="Devise"></div><br><div class="row"><input id="qv" type="number" value="0" placeholder="TVA %" title="TVA %"><input id="qr" type="number" value="0" placeholder="Remise %" title="Remise %"><input id="qy" placeholder="Mode de paiement (ex : virement, espèces)" style="flex:2 1 280px"></div><br><table id="qt"><tr><th style="width:28%">Désignation<th style="width:28%">Détails<th>Quantité<th>Prix unitaire<th>Total<th></tr></table><br><div class="row"><button class="btn o" id="qa" style="flex:0 0 auto">+ Ajouter une ligne</button><b id="gt" style="font-size:1.3rem"></b><button class="btn g" id="qg" style="flex:0 0 auto">Générer le devis PDF</button></div>`;
+if(tab=='projects')b=`<form id="pf" class="card n"><div class="row"><input name="t" placeholder="Titre du projet" required><select name="s">${Object.values(CATS).flat().concat(S.cs.map(x=>x.id)).map(x=>`<option value="${x}">${esc(nm(x))}</option>`).join('')}</select></div><br><textarea name="g" rows="3" placeholder="Description du projet"></textarea><br><br><label class="btn o" style="display:block;text-align:center;padding:30px">Sélectionner plusieurs photos<input type="file" name="f" accept="image/*" multiple hidden id="fi"></label><p class="mut" id="fc2">Vous pouvez choisir autant de photos que vous voulez.</p><textarea name="d" rows="3" placeholder="Légendes des photos : une par ligne, dans l’ordre (facultatif)"></textarea><br><br><button class="btn g">Ajouter le projet</button></form><br><table><tr><th>Titre<th>Type<th>Photos<th></tr>${S.projects.map(p=>`<tr><td>${esc(p.title)}<td>${esc(nm(p.sub))}<td>${p.photos.length}<td><label class="btn s o">+ photos<input type="file" accept="image/*" multiple hidden data-ap="${p.id}"></label> <button class="btn s o" data-dp="${p.id}">Supprimer</button></tr>`).join('')}</table>`;
+if(tab=='photos')b=`<div class="grid">${[['hero','Photo d’accueil (fond de la première page)'],['c_b','Photo — Bâtiment'],['c_i','Photo — Design intérieur'],['c_e','Photo — Aménagement extérieur'],['c_r','Photo — Rénovation & 3D']].map(([k,l])=>`<div class="card n"><h3>${l}</h3><div style="height:200px;border-radius:12px;background:var(--soft) center/cover;${S.imgs[k]?`background-image:url('${S.imgs[k]}')`:''};margin-bottom:14px"></div><label class="btn">Choisir une photo<input type="file" accept="image/*" hidden data-img="${k}"></label> ${S.imgs[k]?`<button class="btn o" data-ri="${k}">Retirer</button>`:''}</div>`).join('')}</div>`;
+if(tab=='reviews')b=`<form id="rf" class="row"><input name="n" placeholder="Nom" required><input name="t" placeholder="Avis" required><button class="btn">Ajouter</button></form><br><table>${S.reviews.map((v,i)=>`<tr><td>${esc(v.n)}<td>${esc(v.t)}<td><button class="btn s o" data-dr="${i}">✕</button></tr>`).join('')}</table>`;
+if(tab=='contacts')b=`<div class="grid">${Object.entries(S.contacts).map(([k,v])=>`<label>${esc(k)}<input data-ct="${esc(k)}" value="${esc(v)}"></label>`).join('')}</div><br><div class="row"><input id="nk" placeholder="Nouveau contact (ex : TikTok)"><input id="nv" placeholder="Lien"><button class="btn" id="na">Ajouter</button></div>`;
+if(tab=='content')b=`<p class="mut">Langue affichée : ${lang.toUpperCase()} (changez la langue en haut)</p>${['slogan','intro','svcd','cbd','cid','ced','crd','ctd','revt'].map(k=>`<label>${k}<textarea rows="2" data-ov="${k}">${esc(t(k))}</textarea></label><br>`).join('')}`;
+if(tab=='users'&&ON())b=`<div class="card n" style="max-width:480px"><h3>Changer mon mot de passe</h3><p class="mut">Connecté : ${esc(sess?sess.email:'')}</p><input id="np" placeholder="Nouveau mot de passe (8 caractères minimum)"><br><br><button class="btn" id="ngen">Générer</button> <button class="btn g" id="nsave">Enregistrer</button></div>`;else if(tab=='users')b=`<table>${S.users.map((u,i)=>`<tr><td>${esc(u.u)}<td><input data-up="${i}" value="${esc(u.p)}"><td><button class="btn s" data-ug="${i}">Générer</button></tr>`).join('')}</table><p class="mut">Les mots de passe se modifient ici. Ce n’est pas une sécurité bancaire sur cette version hébergée.</p>`;
+if(tab=='services')b=`<form id="sf" class="card n"><div class="row"><input name="n" required placeholder="Nom du service"><input name="d" placeholder="Courte description"></div><br><label class="btn o">Photo (facultatif)<input type="file" name="f" accept="image/*" hidden></label> <button class="btn g">Ajouter le service</button></form><br><table><tr><th>Service<th>Description<th>Statut<th></tr>${svcAll().map(x=>`<tr><td>${x.b?esc(x.n):`<input data-cn="${x.id}" value="${esc(x.n)}">`}<td>${x.b?esc(x.d):`<input data-cd="${x.id}" value="${esc(x.d)}">`}<td>${x.off?'Masqué':'Affiché'}<td><label class="btn s o">Photo<input type="file" accept="image/*" hidden data-img="c_${x.id}"></label> ${x.b?`<button class="btn s o" data-hd="${x.id}">${x.off?'Afficher':'Masquer'}</button>`:`<button class="btn s o" data-dsv="${x.id}">Supprimer</button>`}</tr>`).join('')}</table>`;
+if(tab=='offers')b=`<form id="of" class="card n"><div class="row"><input name="t" required placeholder="Titre de l’offre"><input name="p" placeholder="Prix ou réduction (ex : -20 %)"><input name="u" placeholder="Valable jusqu’au (facultatif)"></div><br><textarea name="d" rows="3" placeholder="Description de l’offre"></textarea><br><br><label class="btn o">Photo (facultatif)<input type="file" name="f" accept="image/*" hidden></label> <button class="btn g">Ajouter l’offre</button></form><br><table><tr><th>Titre<th>Description<th>Prix<th>Jusqu’au<th></tr>${S.offers.map((o,i)=>`<tr><td><input data-ot="${i}" value="${esc(o.t)}"><td><textarea rows="2" data-od="${i}">${esc(o.d)}</textarea><td><input data-op="${i}" value="${esc(o.p)}"><td><input data-ou="${i}" value="${esc(o.u)}"><td><label class="btn s o">Photo<input type="file" accept="image/*" hidden data-oi="${i}"></label> <button class="btn s o" data-do="${i}">Supprimer</button></tr>`).join('')||'<tr><td>Aucune offre pour le moment.</tr>'}</table>`;
+app.innerHTML=`<section class="adm"><div class="row"><h2>Admin — ${esc(adm)}</h2><button class="btn o" id="lo" style="flex:0">Déconnexion</button></div><div class="tabs">${Object.entries(TABS).map(([k,v])=>`<button class="btn ${k==tab?'':'o'}" data-t="${k}">${v}</button>`).join('')}</div>${b}</section>`;
+const q=x=>document.querySelectorAll(x);$('#lo').onclick=()=>{adm=null;sess=null;localStorage.removeItem('m2_sess');admin()};
+q('[data-t]').forEach(x=>x.onclick=()=>{tab=x.dataset.t;admin()});
+q('[data-w]').forEach(x=>x.onchange=()=>upd(x.dataset.w,{w:x.value}));
+q('[data-s]').forEach(x=>x.onchange=()=>{upd(x.dataset.s,{s:x.value});admin()});
+q('[data-dc]').forEach(x=>x.onclick=()=>{upd(x.dataset.dc,{x:1});S.clients=S.clients.filter(c=>c.id!=x.dataset.dc);persist();admin()});
+q('[data-dp]').forEach(x=>x.onclick=()=>{S.projects=S.projects.filter(p=>p.id!=x.dataset.dp);persist();admin()});
+q('[data-dr]').forEach(x=>x.onclick=()=>{S.reviews.splice(+x.dataset.dr,1);persist();admin()});
+q('[data-ct]').forEach(x=>x.onchange=()=>{S.contacts[x.dataset.ct]=x.value;persist();foot()});
+q('[data-ov]').forEach(x=>x.onchange=()=>{S.ov[lang+x.dataset.ov]=x.value;persist()});
+q('[data-up]').forEach(x=>x.onchange=()=>{S.users[+x.dataset.up].p=x.value;persist()});
+q('[data-ug]').forEach(x=>x.onclick=()=>{S.users[+x.dataset.ug].p=gen();persist();admin()});
+q('[data-img]').forEach(x=>x.onchange=async()=>{if(x.files[0]){S.imgs[x.dataset.img]=await upImg(x.files[0]);persist();admin()}});
+q('[data-ri]').forEach(x=>x.onclick=()=>{delete S.imgs[x.dataset.ri];persist();admin()});
+q('[data-ap]').forEach(x=>x.onchange=async()=>{const p=S.projects.find(y=>y.id==x.dataset.ap);for(const f of x.files)p.photos.push({src:await upImg(f),d:''});persist();admin()});
+if($('#sf'))$('#sf').onsubmit=async e=>{e.preventDefault();const f=new FormData(e.target),id='x'+Date.now(),fl=f.get('f');S.cs.push({id,name:f.get('n'),desc:f.get('d')});if(fl&&fl.size)S.imgs['c_'+id]=await upImg(fl);persist();admin()};
+q('[data-hd]').forEach(x=>x.onclick=()=>{const i=x.dataset.hd;S.hide=S.hide.includes(i)?S.hide.filter(y=>y!=i):S.hide.concat(i);persist();admin()});
+q('[data-dsv]').forEach(x=>x.onclick=()=>{S.cs=S.cs.filter(y=>y.id!=x.dataset.dsv);persist();admin()});
+q('[data-cn]').forEach(x=>x.onchange=()=>{S.cs.find(y=>y.id==x.dataset.cn).name=x.value;persist()});
+q('[data-cd]').forEach(x=>x.onchange=()=>{S.cs.find(y=>y.id==x.dataset.cd).desc=x.value;persist()});
+if($('#of'))$('#of').onsubmit=async e=>{e.preventDefault();const f=new FormData(e.target),fl=f.get('f'),o={id:'o'+Date.now(),t:f.get('t'),d:f.get('d'),p:f.get('p'),u:f.get('u')};if(fl&&fl.size)o.img=await upImg(fl);S.offers.push(o);persist();admin()};
+q('[data-oi]').forEach(x=>x.onchange=async()=>{if(x.files[0]){S.offers[+x.dataset.oi].img=await upImg(x.files[0]);persist();admin()}});
+q('[data-do]').forEach(x=>x.onclick=()=>{S.offers.splice(+x.dataset.do,1);persist();admin()});
+[['ot','t'],['od','d'],['op','p'],['ou','u']].forEach(([a,k])=>q('[data-'+a+']').forEach(x=>x.onchange=()=>{S.offers[+x.dataset[a]][k]=x.value;persist()}));
+if($('#nsave')){$('#ngen').onclick=()=>$('#np').value=gen();$('#nsave').onclick=async()=>{const p=$('#np').value;if(p.length<8)return alert('8 caractères minimum');try{const t=await tok(),r=await fetch(SB.url+'/auth/v1/user',{method:'PUT',headers:H(t),body:JSON.stringify({password:p})});if(!r.ok)throw 0;alert('Mot de passe modifié')}catch(e){alert('Échec : reconnectez-vous puis réessayez')}}}
+if($('#na'))$('#na').onclick=()=>{const k=$('#nk').value.trim();if(k){S.contacts[k]=$('#nv').value;persist();admin()}};
+if($('#cf'))$('#cf').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);S.clients.push({id:'m'+Date.now(),n:f.get('n'),ty:f.get('ty'),p:f.get('p'),e:f.get('e'),m:'',date:today()});persist();admin()};
+if($('#rf'))$('#rf').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);S.reviews.push({n:f.get('n'),t:f.get('t')});persist();admin()};
+if($('#fi'))$('#fi').onchange=e=>{$('#fc2').textContent=e.target.files.length+' photo(s) sélectionnée(s)'};
+if($('#pf'))$('#pf').onsubmit=async e=>{e.preventDefault();const f=new FormData(e.target),ds=(f.get('d')||'').split('\n'),files=f.getAll('f').filter(x=>x.size),ph=[];e.target.querySelector('.btn.g').textContent='Envoi des photos…';
+for(let i=0;i<files.length;i++)ph.push({src:await upImg(files[i]),d:ds[i]||''});
+if(!ph.length)ph.push({d:ds[0]||'',h:Math.floor(Math.random()*360)});S.projects.push({id:'p'+Date.now(),sub:f.get('s'),title:f.get('t'),desc:f.get('g'),photos:ph});persist();admin()};
+if($('#qa')){const v=k=>$(k).value,calc=()=>{let g=0;[...$('#qt').rows].slice(1).forEach(r=>{const i=r.querySelectorAll('input'),x=i[2].value*i[3].value;r.querySelector('.tt').textContent=x.toFixed(2);g+=x});const dc=g*v('#qr')/100,tx=(g-dc)*v('#qv')/100;$('#gt').textContent='Total : '+(g-dc+tx).toFixed(2)};
+const add=()=>{const r=$('#qt').insertRow();r.innerHTML='<td><input></td><td><input></td><td><input type="number" value="1" min="0"></td><td><input type="number" value="0" min="0"></td><td class="tt">0.00</td><td><button class="btn s o">✕</button></td>';r.oninput=calc;r.querySelector('button').onclick=()=>{r.remove();calc()}};add();add();add();calc();$('#qa').onclick=add;['#qr','#qv'].forEach(k=>$(k).oninput=calc);
+$('#qg').onclick=async()=>{const rows=[...$('#qt').rows].slice(1).map(r=>{const i=r.querySelectorAll('input');return[i[0].value,i[1].value,+i[2].value,+i[3].value]}).filter(r=>r[0]),I={c:v('#qc'),p:v('#qp'),e:v('#qe'),a:v('#qa2'),d:v('#qd'),m:v('#qm'),tva:+v('#qv'),rem:+v('#qr'),pay:v('#qy')};$('#qg').textContent='Création du PDF…';
+try{const blob=await makePdf(I,rows),dl=await cu('downloads'),nm='devis-atelier-m2-'+today()+'.pdf';if(dl)await dl.save({filename:nm,data:blob});else{const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=nm;a.click()}}catch(err){alert('PDF impossible : '+(err.message||err))}$('#qg').textContent='Générer le devis PDF'}}}
+$('#lang').onchange=e=>{lang=e.target.value;try{localStorage.setItem('m2_lang',lang)}catch(_){}render()};
+addEventListener('hashchange',render);render();load();
+</script></body></html>
